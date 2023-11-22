@@ -1,0 +1,77 @@
+
+ol.pokemon-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol.pokemon-list .pokemon-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin: .5rem;
+    padding: 1rem;
+    background-color: #48d0b0;
+}
+
+ol.pokemon-list .pokemon-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ol.pokemon-list .pokemon-item .pokemon-item-name {
+    font-size: 1rem;
+    margin: .25rem 0;
+}
+
+
+ol.pokemon-list .pokemon-item .pokemon-item-number {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    color: #14a06f;
+    opacity: .3;
+    font-size: .625rem;
+}
+
+ol.pokemon-list .pokemon-item .pokemon-item-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ol.pokemon-list .pokemon-item .pokemon-item-detail ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+ol.pokemon-list .pokemon-item .pokemon-item-detail ol li {
+    color: #fff;
+    font-size: .625rem;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+    background-color: #62e1ca;
+}
+
+ol.pokemon-list .pokemon-item .pokemon-item-detail .pokemon-item-img {
+    max-width: 100%;
+    height: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+    ol.pokemon-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    ol.pokemon-list {
+       display: block;
+    }
+}
