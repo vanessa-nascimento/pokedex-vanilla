@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background: #fff url("/assets/images/bg-pokemon.jpg") no-repeat bottom right fixed;
+    background-size: 80%;
 }
 
 .content {
@@ -16,11 +17,17 @@ body {
     margin: 0;
 }
 
-@media only screen and (min-width: 768px) {
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #666;
+}
+
+@media only screen and (min-width: 1440px) {
     body {
-        background-color: #f6f8fc;
+        background-color: #fcdd48;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         margin: 1rem auto;
     }
     .content {

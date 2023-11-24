@@ -20,10 +20,16 @@
 .special { background-color: #f8a5c2 }
 .status { background-color: #f8a5c2 }
 
-h1.pokemon-title {
-    margin: 2rem .5rem;
-    font-size: 2rem;
-    color: #333;
+section.pokemon-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+img.pokemon-title__image {
+    height: 5rem;
 }
 
 ol.pokemon-list {
@@ -41,6 +47,7 @@ ol.pokemon-list .pokemon-item {
     margin: .5rem;
     padding: 1rem;
     max-width: 100%;
+    box-shadow: #666 1px 1px 0;
 }
 
 ol.pokemon-list .pokemon-item a {
@@ -52,6 +59,7 @@ ol.pokemon-list .pokemon-item .pokemon-item-name {
     font-size: 1rem;
     margin: .25rem 0;
     text-transform: capitalize;
+    text-shadow: #666 1px 1px 0;
 }
 
 
@@ -60,14 +68,15 @@ ol.pokemon-list .pokemon-item .pokemon-item-number {
     justify-content: flex-end;
     text-align: right;
     font-size: .625rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     mix-blend-mode:lighten;
 }
 
 ol.pokemon-list .pokemon-item .pokemon-item-detail {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
+    margin-top: .25rem;
 }
 
 
@@ -78,12 +87,20 @@ ol.pokemon-list .pokemon-item .pokemon-item-detail ol {
 }
 
 
-ol.pokemon-list .pokemon-item .pokemon-item-detail ol li {
+ol.pokemon-list .pokemon-item .pokemon-item-detail ol li, .pokemon-title p {
     color: #fff;
     font-size: .625rem;
     padding: .25rem .5rem;
     margin: .25rem 0;
     border-radius: 1rem;
+    text-shadow: #666 1px 1px 0;
+}
+
+.pokemon-title p {
+    background-color: #4151d9;
+    margin: 0;
+    box-shadow: #666 2px 2px 0;
+
 }
 
 ol.pokemon-list .pokemon-item .pokemon-item-detail ol li.pokemon-item-type {
@@ -95,6 +112,7 @@ ol.pokemon-list .pokemon-item .pokemon-item-detail ol li.pokemon-item-type {
 ol.pokemon-list .pokemon-item .pokemon-item-detail .pokemon-item-img {
     max-width: 100%;
     height: 70px;
+    overflow: auto;
 }
 
 section.pokemon-pagination {
@@ -106,13 +124,14 @@ section.pokemon-pagination {
 }
 
 section.pokemon-pagination button {
-    background-color: #6c79bd;
+    background-color: #4151d9;
     color: #fff;
     border: none;
     border-radius: .8rem;
     padding: .5rem 1rem;
     font-size: .8rem;
     cursor: pointer;
+    box-shadow: #666 2px 2px 0;
 }
 
 @media only screen and (min-width: 768px) {
