@@ -18,20 +18,25 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/pokedex.css">
+    <link rel="stylesheet" href="assets/css/pokeball-loader.css">
 </head>
 <body>
-    <main class="content">
+    <main class="content" id="content">
         <section class="pokemon-title">
             <img class="pokemon-title__image" src="assets/images/pokedex.png" alt="Pokédex">
             <p>Vanilla</p>
         </section>
-
-        <nav>
-            <ol class="pokemon-list" id="pokemonList"></ol>
-        </nav>
- 
-        <section class="pokemon-pagination">
-            <button id="loadMoreButton" type="button">Load More</button>
+        <section id="loader" class="loader">
+            <div class="pokeball-loader"></div>
+        </section>
+        <section class="list">
+            <nav>
+                <ol class="pokemon-list" id="pokemonList"></ol>
+            </nav>
+     
+            <section class="pokemon-pagination none">
+                <button id="loadMoreButton" type="button">Load More</button>
+            </section>
         </section>
     </main>
 

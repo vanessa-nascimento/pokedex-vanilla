@@ -1,5 +1,8 @@
 const pokeHTMLList = document.getElementById('pokemonList')
 const loadMoreButton =  document.getElementById('loadMoreButton')
+const contentPage = document.getElementById('content')
+const getLoader = document.getElementById('loader')
+
 const limit = 8
 let offset = 0
 
@@ -21,6 +24,10 @@ function loadMorePokemons(offset, limit) {
                 </a>
             </li>`
         ).join('')
+    })
+    .finally(() => {
+        getLoader.parentElement.removeChild(getLoader)
+        loadMoreButton.parentElement.classList.remove("none")
     })
 }
 

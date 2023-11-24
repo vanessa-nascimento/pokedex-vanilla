@@ -123,6 +123,10 @@ section.pokemon-pagination {
     width: 100%;
 }
 
+section.pokemon-pagination.none{
+    display: none;
+}
+
 section.pokemon-pagination button {
     background-color: #4151d9;
     color: #fff;
